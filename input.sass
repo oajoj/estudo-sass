@@ -1,0 +1,31 @@
+// Uso de módulos
+@use 'base'
+
+// Variáveis
+$cor-roxo: rgb(99, 8, 141)
+$fonte-titulo: Helvetica, sans-serif
+
+// Mixin
+=formatarTexto($cor, $fonte, $tamanho)
+    color: $cor
+    font-family: $fonte
+    font-size: $tamanho
+
+// Classes
+%fonte-roxa
+    // Mixin
+    +formatarTexto($cor-roxo, $fonte-titulo, 200px / 200px * 100%)
+
+// Aninhamento
+header
+    h1
+        text-align: center
+
+// Aplicação Mixin
+.introducao
+    p.introducao__descricao
+        +formatarTexto($cor: $cor-roxo, $fonte: $fonte-titulo, $tamanho: 17px)
+    ul
+        li
+            // Uso da classe
+            @extend %fonte-roxa

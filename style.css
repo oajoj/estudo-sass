@@ -1,3 +1,22 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
 
+.introducao ul li {
+  color: #63088d;
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.introducao p.introducao__descricao {
+  color: #63088d;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+}
 
 /*# sourceMappingURL=style.css.map */
